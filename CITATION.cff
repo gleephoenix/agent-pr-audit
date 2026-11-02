@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this tool in research, cite it as below."
+title: "agent-pr-audit: read-only audit of AI-agent-authored pull requests"
+authors:
+  - name: "GLEE"
+    website: "https://gleephoenix.com"
+version: 0.1.0
+date-released: "2026-11-02"
+license: MIT
+repository-code: "https://github.com/gleephoenix/agent-pr-audit"
+abstract: "Measures which agent-authored pull requests touch tests, CI, lint or CODEOWNERS, which merged without formal review, merge time against diff size, test-line and assertion deltas, and bypass markers."

@@ -26,6 +26,17 @@ Outputs:
 | `findings.csv` | every finding, machine-readable |
 | `audit.json` | full evidence: per-PR files, patches, categories, review states, merge times |
 
+## What it found in one real run
+
+A 90-day audit of a large public Python project (anonymized): **2,866** agent-authored
+pull requests opened, **120 sampled**. 90% touched tests, CI, lint or CODEOWNERS.
+Test changes were strongly additive (54,814 lines added vs 11,702 deleted). 12 PRs
+carried a bypass-style marker. The median time from open to merge was **2.58 hours**,
+and several 1,000–15,000-line diffs merged in under an hour.
+
+That is the pattern the tool is built to surface: not "is the agent good", but **what
+verified the change before it landed**.
+
 ## What it measures
 
 - **Volume and merge behaviour by agent** — PRs found, merged, median open→merge time.
